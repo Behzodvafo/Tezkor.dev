@@ -11,66 +11,33 @@
             margin: 0;
             padding: 0;
             color: #333;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 2em 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2em;
-        }
-
-        /* Навигация */
-        nav {
+            background-color: #f5f5f5;
             display: flex;
             justify-content: center;
-            background: #444;
-            padding: 10px 0;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #4caf50;
-        }
-
-        /* Контейнер */
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 600px;
             padding: 20px;
-        }
-
-        /* Секции */
-        .section {
-            margin: 40px 0;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
+            background: #ffffff;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
+        h1 {
             color: #333;
+            font-size: 2em;
+            margin-bottom: 0.5em;
         }
-        .section p {
+        p {
+            font-size: 1.1em;
             color: #666;
+            line-height: 1.5;
         }
-
-        /* Кнопки */
-        .btn-contact {
+        .btn {
             display: inline-block;
+            margin-top: 1.5em;
             padding: 12px 25px;
             background-color: #4caf50;
             color: #fff;
@@ -79,95 +46,19 @@
             border-radius: 5px;
             transition: background 0.3s;
         }
-        .btn-contact:hover {
+        .btn:hover {
             background-color: #45a049;
-        }
-
-        /* Стили для формы */
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-        form button {
-            padding: 10px 20px;
-            border: none;
-            background-color: #4caf50;
-            color: #fff;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        form button:hover {
-            background-color: #45a049;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Tezkor.dev</h1>
-    <p>Your Trusted Cybersecurity Partner</p>
-</header>
-
-<nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <div class="container">
-
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>At Tezkor.dev, we specialize in providing high-quality cybersecurity solutions that protect your business from the ever-evolving threats of the digital world. Our team of experts is dedicated to offering fast, efficient, and reliable security services to keep your data safe and secure.</p>
-    </section>
-
-    <section id="services" class="section">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Comprehensive Security Audits</li>
-            <li>Penetration Testing</li>
-            <li>Data Encryption and Protection</li>
-            <li>Real-Time Incident Response</li>
-            <li>Risk Assessment and Management</li>
-        </ul>
-    </section>
-
-    <section id="testimonials" class="section">
-        <h2>What Our Clients Say</h2>
-        <p>"Tezkor.dev helped us strengthen our security posture and identify vulnerabilities we weren't aware of. Their professional approach and expertise are unparalleled." - Client A</p>
-        <p>"The Tezkor.dev team was responsive and thorough. We feel more secure knowing they are helping us safeguard our information." - Client B</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <p>If you are interested in our services or have any questions, please don't hesitate to reach out. Fill out the form below, and we will get back to you as soon as possible.</p>
-        <form action="mailto:contact@tezkor.dev" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
+    <h1>Welcome to Tezkor.dev</h1>
+    <p>Your trusted partner in cybersecurity. We provide efficient and effective solutions to safeguard your business from digital threats.</p>
+    <p>Get in touch to secure your digital assets today.</p>
+    <a href="mailto:contact@tezkor.dev" class="btn">Contact Us</a>
 </div>
-
-<footer>
-    <p>&copy; 2024 Tezkor.dev - All Rights Reserved</p>
-</footer>
 
 </body>
 </html>
