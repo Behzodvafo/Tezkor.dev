@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tezkor.dev - Cybersecurity & Bug Bounty</title>
     <style>
-        /* Базовые стили */
+        /* Основные стили */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            color: #ffffff;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
-            background: #333;
-            color: #fff;
+            background: #1877f2; /* Цвет Facebook */
+            color: #ffffff;
             padding: 2em 0;
+            width: 100%;
             text-align: center;
         }
         header h1 {
@@ -25,48 +31,89 @@
         }
         header p {
             font-size: 1.2em;
+            margin: 0.5em 0 0;
         }
         nav {
-            text-align: center;
-            background: #444;
+            background: #4c69ba;
+            width: 100%;
+            display: flex;
+            justify-content: center;
             padding: 10px 0;
         }
         nav a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #4caf50;
+            color: #dfe3ee;
         }
+
         .container {
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 1200px;
+            width: 90%;
+            margin: 20px auto;
             padding: 20px;
-        }
-        .section {
-            margin: 40px 0;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
+            background: #ffffff;
+            color: #333;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .section h2 {
-            color: #333;
-        }
-        .section p {
-            color: #666;
-        }
-        .achievement {
+        .section {
             margin: 20px 0;
         }
+        .section h2 {
+            color: #1877f2;
+            font-size: 1.8em;
+        }
+        .section p {
+            color: #444;
+            line-height: 1.6;
+        }
+        
         .achievement h3 {
-            color: #4caf50;
+            color: #1877f2;
         }
         .achievement p {
-            color: #444;
+            color: #333;
+        }
+        .btn-contact {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #1877f2;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1em;
+            transition: background 0.3s;
+        }
+        .btn-contact:hover {
+            background-color: #155db2;
+        }
+        
+        /* Адаптивные стили */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .btn-contact {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -74,13 +121,13 @@
 
 <header>
     <h1>Tezkor.dev</h1>
-    <p>Your Cybersecurity and Bug Bounty Partner</p>
+    <p>Your Cybersecurity & Bug Bounty Partner</p>
 </header>
 
 <nav>
     <a href="#about">About Us</a>
     <a href="#services">Services</a>
-    <a href="#bug-bounty">Bug Bounty Achievements</a>
+    <a href="#bug-bounty">Bug Bounty</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -88,7 +135,7 @@
 
     <section id="about" class="section">
         <h2>About Us</h2>
-        <p>Tezkor.dev specializes in cybersecurity solutions, helping businesses stay secure in a constantly evolving digital landscape. Our team is dedicated to providing fast, reliable services to protect your data.</p>
+        <p>Tezkor.dev provides cutting-edge cybersecurity services to keep your business safe from digital threats. With expertise in vulnerability assessments, we ensure robust protection for your data.</p>
     </section>
 
     <section id="services" class="section">
@@ -103,14 +150,12 @@
 
     <section id="bug-bounty" class="section">
         <h2>Bug Bounty Achievements</h2>
-        <p>Below are some of our significant contributions and achievements on various bug bounty platforms:</p>
 
         <!-- Achievement on HackerOne -->
         <div class="achievement">
             <h3>HackerOne</h3>
-            <p><strong>Vulnerability:</strong> Critical SQL Injection</p>
-            <p><strong>Impact:</strong> Allowed unauthorized access to sensitive user data.</p>
-            <p><strong>Result:</strong> Issue was patched, and reward granted by the platform.</p>
+            <p><strong>Vulnerability:</strong> SQL Injection</p>
+            <p><strong>Impact:</strong> Access to sensitive data. Issue was resolved and reward received.</p>
             <p><a href="https://hackerone.com/your-profile" target="_blank">View on HackerOne</a></p>
         </div>
 
@@ -118,30 +163,20 @@
         <div class="achievement">
             <h3>Bugcrowd</h3>
             <p><strong>Vulnerability:</strong> Cross-Site Scripting (XSS)</p>
-            <p><strong>Impact:</strong> Enabled potential malicious script injection, impacting user sessions.</p>
-            <p><strong>Result:</strong> Vulnerability mitigated, and a reward was issued.</p>
+            <p><strong>Impact:</strong> Malicious code injection risk. Issue resolved, reward received.</p>
             <p><a href="https://bugcrowd.com/your-profile" target="_blank">View on Bugcrowd</a></p>
-        </div>
-
-        <!-- Achievement on Synack -->
-        <div class="achievement">
-            <h3>Synack</h3>
-            <p><strong>Vulnerability:</strong> Remote Code Execution (RCE)</p>
-            <p><strong>Impact:</strong> Allowed attackers to execute arbitrary code on the server.</p>
-            <p><strong>Result:</strong> Swift action taken to resolve the issue, with acknowledgment from Synack.</p>
-            <p><a href="https://synack.com/your-profile" target="_blank">View on Synack</a></p>
         </div>
     </section>
 
     <section id="contact" class="section">
         <h2>Contact Us</h2>
-        <p>For inquiries or collaboration opportunities, reach out to us at:</p>
-        <a href="mailto:contact@tezkor.dev" class="btn-show-info">Email Us</a>
+        <p>To learn more about our services or discuss collaboration opportunities, contact us:</p>
+        <a href="mailto:contact@tezkor.dev" class="btn-contact">Email Us</a>
     </section>
 
 </div>
 
-<footer>
+<footer style="background: #1877f2; color: white; padding: 1em; text-align: center; width: 100%;">
     <p>&copy; 2024 Tezkor.dev - All Rights Reserved</p>
 </footer>
 
